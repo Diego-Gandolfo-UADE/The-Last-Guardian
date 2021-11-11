@@ -36,7 +36,7 @@ public class PlayerController : Actor
         InputController.instance.OnMove += OnMove;
         InputController.instance.OnShoot += OnShoot;
         InputController.instance.OnJump += OnJump;
-        InputController.instance.OnSprint += OnSprint;
+        //InputController.instance.OnSprint += OnSprint;
         InputController.instance.OnPhysicalAttack += OnPhysicalAttack;
 
         PhysicalAttackController.PhysicalAttack += OnDoingPhysicalDamage;
@@ -103,7 +103,7 @@ public class PlayerController : Actor
         InputController.instance.OnMove -= OnMove;
         InputController.instance.OnShoot -= OnShoot;
         InputController.instance.OnJump -= OnJump;
-        InputController.instance.OnSprint -= OnSprint;
+        //InputController.instance.OnSprint -= OnSprint;
         InputController.instance.OnPhysicalAttack -= OnPhysicalAttack;
 
         PhysicalAttackController.PhysicalAttack -= OnDoingPhysicalDamage;
