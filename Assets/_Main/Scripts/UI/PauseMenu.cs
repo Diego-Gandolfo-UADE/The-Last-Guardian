@@ -21,7 +21,8 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private Button goBackButton;
 
     [Header("Victory")]
-    [SerializeField] private Button returnMenuButton;
+    [SerializeField] private Button victoryButton;
+    [SerializeField] private string sceneName;
 
     //Extras
     private bool isActive;
@@ -67,7 +68,7 @@ public class PauseMenu : MonoBehaviour
         buttonQuit.onClick.AddListener(OnClickQuitHandler);
         goBackButton.onClick.AddListener(OnClickGoBackHandler);
         buttonMainMenu.onClick.AddListener(OnClickMenuHandler);
-        returnMenuButton.onClick.AddListener(OnClickMenuHandler);
+        victoryButton.onClick.AddListener(OnClickVictoryHandler);
     }
 
     private void Pause()
@@ -110,6 +111,13 @@ public class PauseMenu : MonoBehaviour
     private void OnClickMenuHandler()
     {
         loadCommand = new LoadSceneCommand("MainMenu");
+        GameManager.instance.AddEvent(loadCommand);
+    }
+
+    private void OnClickVictoryHandler()
+    {
+        var sceneToLoad = sceneName == "" ? "MainMenu" : sceneName;
+        loadCommand = new LoadSceneCommand(sceneToLoad);
         GameManager.instance.AddEvent(loadCommand);
     }
 

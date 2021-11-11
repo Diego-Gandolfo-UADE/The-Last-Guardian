@@ -58,7 +58,8 @@ MonoBehaviour:
   buttonHelp: {fileID: 4362847946172184915}
   buttonQuit: {fileID: 4362847944800661312}
   goBackButton: {fileID: 4362847945225288555}
-  returnMenuButton: {fileID: 8060335391035465885}
+  victoryButton: {fileID: 8060335391035465885}
+  sceneName: 
 --- !u!1 &5714870760725802063
 GameObject:
   m_ObjectHideFlags: 0
