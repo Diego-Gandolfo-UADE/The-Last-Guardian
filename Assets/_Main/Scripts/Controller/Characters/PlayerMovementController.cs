@@ -51,6 +51,7 @@ public class PlayerMovementController : MonoBehaviour
     {
         if (_actorStats.CanJump && CheckIfGrounded())
         {
+            rbody.velocity = Vector2.zero;
             var jumpForce = _actorStats.JumpForce * transform.up;
             rbody.AddForce(jumpForce, ForceMode2D.Impulse);
         }
