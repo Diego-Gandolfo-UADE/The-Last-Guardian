@@ -252,7 +252,6 @@ Transform:
   - {fileID: 1362847084}
   - {fileID: 1120247651}
   - {fileID: 448031448}
-  - {fileID: 199902288530548296}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3453,6 +3452,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MushroomJump1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8269068147868186899, guid: 625c22baf8bd2314fbd47a22ebc84fe6,
+        type: 3}
+      propertyPath: jumpForceMultiplier
+      value: 1.15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 625c22baf8bd2314fbd47a22ebc84fe6, type: 3}
 --- !u!4 &574143446 stripped
@@ -4720,6 +4724,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9110743762900444284, guid: 17a0aa2c758ecd84fafb44cbdf87c043,
+        type: 3}
+      propertyPath: jumpForceMultiplier
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17a0aa2c758ecd84fafb44cbdf87c043, type: 3}
 --- !u!4 &744124525 stripped
@@ -5142,6 +5151,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9110743762900444284, guid: 17a0aa2c758ecd84fafb44cbdf87c043,
+        type: 3}
+      propertyPath: jumpForceMultiplier
+      value: 1.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17a0aa2c758ecd84fafb44cbdf87c043, type: 3}
@@ -10725,31 +10739,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1770237469}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1776082670 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 782132442157637181, guid: e8e959319d055504387e2deeb683afe2,
-    type: 3}
-  m_PrefabInstance: {fileID: 199902288530548295}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1776082671
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1776082670}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ebf98f78c9c98f74e993b11fa673fb68, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1791990249
 GameObject:
   m_ObjectHideFlags: 0
@@ -12479,12 +12468,12 @@ PrefabInstance:
     - target: {fileID: 7740819961032666918, guid: 1cf95a7638ded8c41b44b610887e6b04,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 61.27
+      value: 59.29
       objectReference: {fileID: 0}
     - target: {fileID: 7740819961032666918, guid: 1cf95a7638ded8c41b44b610887e6b04,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.355
+      value: -2.55
       objectReference: {fileID: 0}
     - target: {fileID: 7740819961032666918, guid: 1cf95a7638ded8c41b44b610887e6b04,
         type: 3}
@@ -13016,6 +13005,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MushroomJump1
       objectReference: {fileID: 0}
+    - target: {fileID: 8269068147868186899, guid: 625c22baf8bd2314fbd47a22ebc84fe6,
+        type: 3}
+      propertyPath: jumpForceMultiplier
+      value: 1.75
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 625c22baf8bd2314fbd47a22ebc84fe6, type: 3}
 --- !u!4 &2086479145 stripped
@@ -13402,7 +13396,7 @@ PrefabInstance:
     - target: {fileID: 952511351819446281, guid: 2fd8f28db21a37e4ca5d51db4606b856,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -12.403
+      value: -15.13
       objectReference: {fileID: 0}
     - target: {fileID: 952511351819446281, guid: 2fd8f28db21a37e4ca5d51db4606b856,
         type: 3}
@@ -13863,80 +13857,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1654900972918573023, guid: 72a7d2be829c00c4eba70e5525370129,
     type: 3}
   m_PrefabInstance: {fileID: 28948636}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &199902288530548295
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 11964987}
-    m_Modifications:
-    - target: {fileID: 782132442157637181, guid: e8e959319d055504387e2deeb683afe2,
-        type: 3}
-      propertyPath: m_Name
-      value: EnemySpeed
-      objectReference: {fileID: 0}
-    - target: {fileID: 8003305562600658013, guid: e8e959319d055504387e2deeb683afe2,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 8003305562600658013, guid: e8e959319d055504387e2deeb683afe2,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 42.79
-      objectReference: {fileID: 0}
-    - target: {fileID: 8003305562600658013, guid: e8e959319d055504387e2deeb683afe2,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -4.48
-      objectReference: {fileID: 0}
-    - target: {fileID: 8003305562600658013, guid: e8e959319d055504387e2deeb683afe2,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 239.57533
-      objectReference: {fileID: 0}
-    - target: {fileID: 8003305562600658013, guid: e8e959319d055504387e2deeb683afe2,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8003305562600658013, guid: e8e959319d055504387e2deeb683afe2,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8003305562600658013, guid: e8e959319d055504387e2deeb683afe2,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8003305562600658013, guid: e8e959319d055504387e2deeb683afe2,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8003305562600658013, guid: e8e959319d055504387e2deeb683afe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8003305562600658013, guid: e8e959319d055504387e2deeb683afe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8003305562600658013, guid: e8e959319d055504387e2deeb683afe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e8e959319d055504387e2deeb683afe2, type: 3}
---- !u!4 &199902288530548296 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 199902288530548295}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &435619328558984396
 PrefabInstance:
@@ -14578,6 +14498,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: 'BigMushroom '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062843145454311043, guid: aaf59ca818192834daa17ddfc74af3c2,
+        type: 3}
+      propertyPath: jumpForceMultiplier
+      value: 1.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aaf59ca818192834daa17ddfc74af3c2, type: 3}
