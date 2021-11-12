@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BouncingMushroom : MonoBehaviour
 {
-    //[SerializeField] float jumpForce = 1f;
+    [SerializeField] private float jumpForceMultiplier = 1f;
     [SerializeField] private AudioSource bounceSound;
     private Animator animatorController;
 
@@ -17,7 +17,7 @@ public class BouncingMushroom : MonoBehaviour
         PlayerController player = collision.gameObject.GetComponent<PlayerController>();
         if(player != null)
         {
-            player.OnJump();
+            player.MovementController.Jump(jumpForceMultiplier);
             bounceSound.Play();
             animatorController.SetTrigger("IsJumping");
         }

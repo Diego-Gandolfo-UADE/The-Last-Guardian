@@ -47,13 +47,13 @@ public class PlayerMovementController : MonoBehaviour
         }
     }
 
-    public void Jump()
+    public void Jump(float jumpForceMultiplier = 1f)
     {
         if (_actorStats.CanJump && CheckIfGrounded())
         {
             var velocity = new Vector2(rbody.velocity.x, 0f);
             rbody.velocity = velocity;
-            var jumpForce = _actorStats.JumpForce * transform.up;
+            var jumpForce = (_actorStats.JumpForce * jumpForceMultiplier) * transform.up;
             rbody.AddForce(jumpForce, ForceMode2D.Impulse);
         }
     }
