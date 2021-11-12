@@ -10705,6 +10705,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7643866640082403204, guid: 41da1b15499bd74418a88168d1e75cdf,
+        type: 3}
+      propertyPath: m_Text
+      value: You finished the 2nd Level!
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4126312622347764974, guid: 41da1b15499bd74418a88168d1e75cdf, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 41da1b15499bd74418a88168d1e75cdf, type: 3}
