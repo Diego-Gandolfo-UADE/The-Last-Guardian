@@ -7,14 +7,17 @@ public class InputController : MonoBehaviour
 {
     public static InputController instance;
 
+
     #region KeyCodes
-    private string horizontalAxis = "Horizontal";
+    [SerializeField] private KeyCode magicalAttack = KeyCode.Z;
+    [SerializeField] private KeyCode physicalAttack = KeyCode.X;
     private KeyCode jump = KeyCode.Space;
-    private KeyCode shoot = KeyCode.Mouse0;
-    private KeyCode physicalAttack = KeyCode.Mouse1;
     private KeyCode dash = KeyCode.LeftShift;
     private KeyCode pause = KeyCode.Escape;
     private KeyCode sprint = KeyCode.LeftShift;
+    private string horizontalAxis = "Horizontal";
+    //private KeyCode physicalAttack2 = KeyCode.Mouse1;
+    //private KeyCode magicalAttack2 = KeyCode.Mouse1;
     #endregion
 
     #region Events
@@ -65,7 +68,7 @@ public class InputController : MonoBehaviour
     }
     private void CheckShoot()
     {
-        if (Input.GetKeyDown(shoot))
+        if (Input.GetKeyDown(magicalAttack))
             OnShoot?.Invoke();
     }
 
