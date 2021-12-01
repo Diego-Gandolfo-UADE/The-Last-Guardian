@@ -1043,8 +1043,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -454.32007, y: -76.94296}
-  m_SizeDelta: {x: 332.6512, y: 445.7603}
+  m_AnchoredPosition: {x: -467.92, y: -44.203}
+  m_SizeDelta: {x: 359.8322, y: 380.28}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &414586645
 MonoBehaviour:
@@ -1079,7 +1079,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "<b>Programmers & Programmers</b>\nJessica Galvan\nDante Paoletti\nHoracio
+  m_Text: "<b>Programmers & Game Designers</b>\nJessica Galvan\nDiego Gandolfo\nHoracio
     Nieva\nFacundo Huergo\nFranco Rivas \n\n<b>Animator </b>\nDante Paoletti"
 --- !u!222 &414586646
 CanvasRenderer:
@@ -2372,7 +2372,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 453.32, y: -82.73}
-  m_SizeDelta: {x: 332.6512, y: 457.3351}
+  m_SizeDelta: {x: 332.6512, y: 457.33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2091318873
 MonoBehaviour:
